@@ -13,6 +13,7 @@ import { EconomyPage } from '../pages/economy/economy';
 import { SportPage } from '../pages/sport/sport';
 import { ApiProvider } from '../providers/api/api';
 import { GenreBrowserPage } from '../providers/stream-api/stream-api';
+import { StreamingMedia } from '@ionic-native/streaming-media';
 
 
 
@@ -45,7 +46,8 @@ import { GenreBrowserPage } from '../providers/stream-api/stream-api';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     ApiProvider,
-    GenreBrowserPage
+    GenreBrowserPage,
+    StreamingMedia
     
     
   ]
