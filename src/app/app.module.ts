@@ -12,7 +12,7 @@ import { DetailPage } from '../pages/detail/detail';
 import { EconomyPage } from '../pages/economy/economy';
 import { SportPage } from '../pages/sport/sport';
 import { ApiProvider } from '../providers/api/api';
-import { GenreBrowserPage } from '../providers/stream-api/stream-api';
+
 import { StreamingMedia } from '@ionic-native/streaming-media';
 
 
@@ -21,10 +21,10 @@ import { StreamingMedia } from '@ionic-native/streaming-media';
   declarations: [
     MyApp,
     HomePage,
-    DetailPage,
     EconomyPage,   
     StreamPage,
-    SportPage
+    SportPage,
+    DetailPage
   ],
   imports: [
     BrowserModule,
@@ -35,10 +35,10 @@ import { StreamingMedia } from '@ionic-native/streaming-media';
   entryComponents: [
     MyApp,
     HomePage,
-    DetailPage,
     EconomyPage,
     StreamPage,
-    SportPage
+    SportPage,
+    DetailPage
     
   ],
   providers: [
@@ -46,7 +46,7 @@ import { StreamingMedia } from '@ionic-native/streaming-media';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     ApiProvider,
-    GenreBrowserPage,
+
     StreamingMedia
     
     
