@@ -10,6 +10,7 @@ import { HomePage } from '../pages/home/home';
 import { StreamPage } from '../pages/stream/stream';
 import { DetailPage } from '../pages/detail/detail';
 import { EconomyPage } from '../pages/economy/economy';
+import { SportPage } from '../pages/sport/sport';
 import { ApiProvider } from '../providers/api/api';
 import { GenreBrowserPage } from '../providers/stream-api/stream-api';
 
@@ -21,7 +22,8 @@ import { GenreBrowserPage } from '../providers/stream-api/stream-api';
     HomePage,
     DetailPage,
     EconomyPage,   
-    StreamPage
+    StreamPage,
+    SportPage
   ],
   imports: [
     BrowserModule,
@@ -34,7 +36,8 @@ import { GenreBrowserPage } from '../providers/stream-api/stream-api';
     HomePage,
     DetailPage,
     EconomyPage,
-    StreamPage
+    StreamPage,
+    SportPage
     
   ],
   providers: [

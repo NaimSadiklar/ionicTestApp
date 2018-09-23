@@ -5,8 +5,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { ApiProvider } from '../providers/api/api';
 import { HomePage } from '../pages/home/home';
 import { EconomyPage } from '../pages/economy/economy';
+import { SportPage } from '../pages/sport/sport';
 
 import { StreamPage } from '../pages/stream/stream';
+
 
 
 @Component({
@@ -28,12 +30,17 @@ export class MyApp {
     icon:'stats'
    }
    ,
-   {
-    title:'Canlı Yayın',
-    
-    component: StreamPage,
-    icon:'stream'
-   }
+    {
+      title: 'Spor',
+      component: SportPage
+    },
+    {
+      title: 'Canlı Yayın',
+
+      component: StreamPage,
+      icon: 'stream'
+    }
+
 
   ]
 
