@@ -46,7 +46,6 @@ import { StreamingMedia } from '@ionic-native/streaming-media';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     ApiProvider,
-
     StreamingMedia
     
     
