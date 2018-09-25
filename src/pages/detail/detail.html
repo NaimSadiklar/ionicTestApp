@@ -1,0 +1,22 @@
+<ion-header>
+        <ion-navbar>
+          <ion-title>
+                {{post.title.rendered}} 
+           </ion-title>
+        </ion-navbar>
+      </ion-header>
+      
+      <ion-content padding>
+          
+            <img [src]="post.better_featured_image.source_url" style="width:100%; " >
+            <ion-title> {{post.title.rendered}} </ion-title>
+            <ion-row>
+                    <ion-badge color="light">
+                      <ion-icon name="time"></ion-icon>
+                  {{post.date | date:'dd.MM.yyyy'}}
+                </ion-badge>
+                </ion-row>
+                
+                <div [innerHTML]="post.content.rendered"></div>
+      </ion-content>
+
